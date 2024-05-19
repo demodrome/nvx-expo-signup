@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1f1f1f;
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.wrapper {
+  background-color: #fff;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  display: flex;
+  flex-direction: row;
+  margin: 40px auto;
+  max-width: 1200px;
+  overflow: hidden;
+}
+
+.header {
+  flex: 1 1 45%;
+}
+
+.signup {
+  flex: 1 1 55%;
+}
