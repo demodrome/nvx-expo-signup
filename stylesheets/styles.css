@@ -7,12 +7,36 @@
 
 body {
   background-color: #1f1f1f;
+  color: #505050;
   line-height: 1.5;
 }
 
 img {
   display: block;
   width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link,
+a:visited {
+  color:rgb(22, 161, 161);
+}
+
+a:hover {
+  color:rgb(18, 126, 126);
+  border-bottom: 1px dotted rgb(18, 126, 126);
+  padding-bottom: 3px;
+}
+
+a:active {
+  color:rgb(4, 107, 107);
+}
+
+p {
+  margin-bottom: 20px;
 }
 
 .wrapper {
@@ -61,4 +85,10 @@ img {
   letter-spacing: 16px;
   text-transform: uppercase;
   margin-top: -20px;
+}
+
+.heading {
+  color: rgb(22, 161, 161);
+  font-size: 3rem;
+  font-weight: 100;
 }
