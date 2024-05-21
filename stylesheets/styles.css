@@ -8,6 +8,7 @@
 body {
   background-color: #1f1f1f;
   color: #505050;
+  font-weight: 300;
   line-height: 1.5;
 }
 
@@ -57,6 +58,21 @@ p {
 
 .signup {
   flex: 1 1 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-container {
+  padding: 0 50px;
+}
+
+.text-container:first-of-type {
+  margin-bottom: 40px;
+}
+
+.text-container:last-of-type {
+  margin-top: 30px;
 }
 
 /* Components */
@@ -91,4 +107,73 @@ p {
   color: rgb(22, 161, 161);
   font-size: 3rem;
   font-weight: 100;
+  margin-bottom: 20px;
+}
+
+.form-controls {
+  background-color: #fafafa;
+  -webkit-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+  padding: 30px 50px;
+}
+
+.signup-form label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.signup-form input {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  color: #333333;
+  font-weight: 300;
+  padding: 7px;
+  outline: none;
+  width: 100%;
+}
+
+.signup-form input:focus {
+  border-color: #333333;
+}
+
+.signup-form input::placeholder {
+  color: #cccccc;
+}
+
+.signup-form input:invalid {
+  border-color: rgb(224, 68, 68);
+}
+
+.signup-form button {
+  font: inherit;
+}
+
+.form-row {
+  display: flex;
+  gap: 30px;
+  flex-direction: row;
+  margin-bottom: 15px;
+}
+
+.input-group {
+  flex: 1 1 50%;
+}
+
+.btn {
+  background-color: rgb(22, 161, 161);
+  -webkit-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+.btn:hover {
+  background-color: rgb(18, 126, 126);
+  cursor: pointer;
 }
